@@ -13,90 +13,60 @@
 <body>
     <section>
         <div class="container">
-            <div class="pay">
-                <div class="pay-main-title">
-                    <h1>Добрый день, Михаил!
-                    </br> 
-                    Выберите способ пополнения:</h1>
-                </div>
-                <div class="tabs">
-                    <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
-                    <label for="tab-btn-1">Банковская карта</label>
-                    <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-                    <label for="tab-btn-2">Система быстрых платежей</label>
-                    <input type="radio" name="tab-btn" id="tab-btn-3" value="">
-                    <label for="tab-btn-3">Банковский перевод</label>
-                    <div class="pay-form" id="content-1">
-                        <div class="pay-title">
-                            <h2>Банковская карта</h2>
-                            <div class="pay-form-cover">
-                                <img class="pay-form-img" src="https://kurzan.github.io/pay-form/images/xard.png" alt="">
-                            </div>
-                            
-                        </div>
-                        <div class="pay-form-item">
-                            <select class="form_select" name="contract" style="color:gray" onchange="this.style.color='black'" required>
-                                <option class="pay-option" value="" style="display:none">Выбрать договор</option>
-                                <option value="">Договор ИИС 1572</option>
-                                <option value="">Валютный договор</option>
-                                <option value="">Договор универсального инвестиционного счета s2998</option>
-                            </select>
-                        </div>
-                        <div class="pay-form-item">
-                            <select class="form_select" name="portfel" style="color:gray" onchange="this.style.color='black'">
-                                <option value="" style="display:none">Выбрать портфель</option>
-                                <option value="">Фондовый рынок Московской биржи</option>
-                            </select>
-                        </div>
-                        <div class="pay-form-value">
-                            <input class="pay-form-input" type="number" name="" placeholder="Ввести сумму, ₽" required>
-                            <button class="pay-form-btn">Пополнить</button>
-                        </div>
-                        <p class="our-com-p">Наша комиссия: 0 ₽</p>
-                        <p class="comiss_p">При нажатии на кнопку "Внести" Вы будете направлены на сервис платежной системы НКО «МОНЕТА» (ООО) для осуществления перевода.</p>
-                        <p class="comiss_p">Уважаемые клиенты, просим обратить внимание, что предельные лимиты платежа по различным типам банковских карт могут отличаться. Просим уточнять предельную сумму, доступную для перевода по Вашей карте, а также возможную комиссию при списании в своем банке.</p>
+            <div class="main-pay-page">
+                <div class="pay">
+                    <div class="pay-main-title">
+                        <h1>Добрый день, Михаил!
+                        </br> 
+                        Выберите способ пополнения:</h1>
                     </div>
-                    <div class="pay-form" id="content-2">
-                        <div class="pay-title">
-                            <h2>Cистема быстрых платежей</h2>
-                            <div class="pay-form-cover">
-                                <img class="pay-form-img" src="https://kurzan.github.io/pay-form/images/sbp.png" alt="">
-                            </div>
-                            
-                        </div>
-                        <div class="pay-form-item">
-                            <select class="form_select" name="contract" style="color:gray" onchange="this.style.color='black'">
-                                <option value="" style="display:none">Выбрать договор</option>
-                                <option value="">Договор ИИС 1572</option>
-                                <option value="">Валютный договор</option>
-                                <option value="">Договор универсального инвестиционного счета s2998</option>
-                            </select>
-                        </div>
-                        <div class="pay-form-item">
-                            <select class="form_select" name="portfel" style="color:gray" onchange="this.style.color='black'">
-                                <option value="" style="display:none">Выбрать портфель</option>
-                                <option value="">Фондовый рынок Московской биржи</option>
-                            </select>
-                        </div>
-                        <div class="pay-form-value">
-                            <input class="pay-form-input" type="number" name="" id="" placeholder="Ввести сумму, ₽">
-                            <button class="pay-form-btn">Сформировать QR-Код</button>
-                        </div>
-                        <p class="our-com-p">Наша комиссия: 0 ₽</p>
-                        <p class="comiss_p">Для пополнения отсканируйте сформированный qr-код или нажмите на него с мобильного устройства на ОС Android / iOS</p>
-                        <p class="comiss_p">Банки, поддерживающие оплату в рамках Системы быстрых платежей <a class="sbp_link" href="https://sbp.nspk.ru/participants/">Перейти</a></p>
-                    </div>
-                    <div class="pay-form" id="content-3">
-                        <form action="" name="form">
+                    <div class="tabs">
+                        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                        <label for="tab-btn-1">Банковская карта</label>
+                        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                        <label for="tab-btn-2">Система быстрых платежей</label>
+                        <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                        <label for="tab-btn-3">Банковский перевод</label>
+                        <div class="pay-form" id="content-1">
                             <div class="pay-title">
-                                <h2>Банковский перевод</h2>
+                                <h2>Банковская карта</h2>
                                 <div class="pay-form-cover">
-                                    <img class="pay-form-img" src="https://kurzan.github.io/pay-form/images/bank.png" alt="">
+                                    <img class="pay-form-img" src="href="https://kurzan.github.io/pay-form/images/xard.png" alt="">
                                 </div>
                                 
                             </div>
                             <div class="pay-form-item">
-                                <select class="form_select"  name="contract" style="color:gray" onchange="this.style.color='black'" required>
+                                <select class="form_select" name="contract" style="color:gray" onchange="this.style.color='black'" required>
+                                    <option class="pay-option" value="" style="display:none">Выбрать договор</option>
+                                    <option value="">Договор ИИС 1572</option>
+                                    <option value="">Валютный договор</option>
+                                    <option value="">Договор универсального инвестиционного счета s2998</option>
+                                </select>
+                            </div>
+                            <div class="pay-form-item">
+                                <select class="form_select" name="portfel" style="color:gray" onchange="this.style.color='black'">
+                                    <option value="" style="display:none">Выбрать портфель</option>
+                                    <option value="">Фондовый рынок Московской биржи</option>
+                                </select>
+                            </div>
+                            <div class="pay-form-value">
+                                <input class="pay-form-input" type="number" name="" placeholder="Ввести сумму, ₽" required>
+                                <button class="pay-form-btn">Пополнить</button>
+                            </div>
+                            <p class="our-com-p">Наша комиссия: 0 ₽</p>
+                            <p class="comiss_p">При нажатии на кнопку "Внести" Вы будете направлены на сервис платежной системы НКО «МОНЕТА» (ООО) для осуществления перевода.</p>
+                            <p class="comiss_p">Уважаемые клиенты, просим обратить внимание, что предельные лимиты платежа по различным типам банковских карт могут отличаться. Просим уточнять предельную сумму, доступную для перевода по Вашей карте, а также возможную комиссию при списании в своем банке.</p>
+                        </div>
+                        <div class="pay-form" id="content-2">
+                            <div class="pay-title">
+                                <h2>Cистема быстрых платежей</h2>
+                                <div class="pay-form-cover">
+                                    <img class="pay-form-img" src="href="https://kurzan.github.io/pay-form/images/sbp.png" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="pay-form-item">
+                                <select class="form_select" name="contract" style="color:gray" onchange="this.style.color='black'">
                                     <option value="" style="display:none">Выбрать договор</option>
                                     <option value="">Договор ИИС 1572</option>
                                     <option value="">Валютный договор</option>
@@ -104,57 +74,89 @@
                                 </select>
                             </div>
                             <div class="pay-form-item">
-                                <select class="form_select" name="portfel" style="color:gray" onchange="this.style.color='black'" required>
+                                <select class="form_select" name="portfel" style="color:gray" onchange="this.style.color='black'">
                                     <option value="" style="display:none">Выбрать портфель</option>
                                     <option value="">Фондовый рынок Московской биржи</option>
                                 </select>
                             </div>
                             <div class="pay-form-value">
-                                <input class="pay-form-input" type="number" placeholder="Ввести сумму, ₽" required>
-                                <button type="submit" class="pay-form-btn">Показать реквизиты</button>
+                                <input class="pay-form-input" type="number" name="" id="" placeholder="Ввести сумму, ₽">
+                                <button class="pay-form-btn">Сформировать QR-Код</button>
                             </div>
                             <p class="our-com-p">Наша комиссия: 0 ₽</p>
                             <p class="comiss_p">Для пополнения отсканируйте сформированный qr-код или нажмите на него с мобильного устройства на ОС Android / iOS</p>
                             <p class="comiss_p">Банки, поддерживающие оплату в рамках Системы быстрых платежей <a class="sbp_link" href="https://sbp.nspk.ru/participants/">Перейти</a></p>
-                        </form>
+                        </div>
+                        <div class="pay-form" id="content-3">
+                            <form action="" name="form">
+                                <div class="pay-title">
+                                    <h2>Банковский перевод</h2>
+                                    <div class="pay-form-cover">
+                                        <img class="pay-form-img" src="href="https://kurzan.github.io/pay-form/images/bank.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                                <div class="pay-form-item">
+                                    <select class="form_select"  name="contract" style="color:gray" onchange="this.style.color='black'" required>
+                                        <option value="" style="display:none">Выбрать договор</option>
+                                        <option value="">Договор ИИС 1572</option>
+                                        <option value="">Валютный договор</option>
+                                        <option value="">Договор универсального инвестиционного счета s2998</option>
+                                    </select>
+                                </div>
+                                <div class="pay-form-item">
+                                    <select class="form_select" name="portfel" style="color:gray" onchange="this.style.color='black'" required>
+                                        <option value="" style="display:none">Выбрать портфель</option>
+                                        <option value="">Фондовый рынок Московской биржи</option>
+                                    </select>
+                                </div>
+                                <div class="pay-form-value">
+                                    <input class="pay-form-input" type="number" placeholder="Ввести сумму, ₽" required>
+                                    <button type="submit" class="pay-form-btn">Показать реквизиты</button>
+                                </div>
+                                <p class="our-com-p">Наша комиссия: 0 ₽</p>
+                                <p class="comiss_p">Для пополнения отсканируйте сформированный qr-код или нажмите на него с мобильного устройства на ОС Android / iOS</p>
+                                <p class="comiss_p">Банки, поддерживающие оплату в рамках Системы быстрых платежей <a class="sbp_link" href="https://sbp.nspk.ru/participants/">Перейти</a></p>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="products">
-                <h1>Популярные продукты</h1>
-                <div class="product-item">
-                    <h3 class="product-item-title">20% годовых</h3>
-                    <div class="product-cover">
-                        <div class="product-cover-text">
-                            <p class="product-item-text">Ожидаемая доходность в рамках стандартной стратегии доверительного управления «Максимум»</p>
-                            <a class="product-item-link" href="#">Подробнее</a>
-                        </div>
-                        <div class="product-cover-img">
-                            <img class="product-cover-img-img" src="https://kurzan.github.io/pay-form/images/products/du_array.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <h3 class="product-item-title">Магазин финансовых продуктов</h3>
-                    <div class="product-cover">
-                        <div class="product-cover-text">
-                            <p class="product-item-text">Инвестиции в ценные бумаги, драгоценные металлы и иностранную валюту</p>
-                            <a class="product-item-link" href="#">Подробнее</a>
-                        </div>
-                        <div class="product-cover-img">
-                            <img class="product-cover-img-img" src="https://kurzan.github.io/pay-form/images/products/shop.png" alt="">
+                <div class="products">
+                    <h1>Популярные продукты</h1>
+                    <div class="product-item">
+                        <h3 class="product-item-title">20% годовых</h3>
+                        <div class="product-cover">
+                            <div class="product-cover-text">
+                                <p class="product-item-text">Ожидаемая доходность в рамках стандартной стратегии доверительного управления «Максимум»</p>
+                                <a class="product-item-link" href="#">Подробнее</a>
+                            </div>
+                            <div class="product-cover-img">
+                                <img class="product-cover-img-img" src="href="https://kurzan.github.io/pay-form/images/products/du_array.png" alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-item">
-                    <h3 class="product-item-title">Магазин финансовых продуктов</h3>
-                    <div class="product-cover">
-                        <div class="product-cover-text">
-                            <p class="product-item-text">Инвестиции в ценные бумаги, драгоценные металлы и иностранную валюту</p>
-                            <a class="product-item-link" href="#">Подробнее</a>
+                    <div class="product-item">
+                        <h3 class="product-item-title">Магазин финансовых продуктов</h3>
+                        <div class="product-cover">
+                            <div class="product-cover-text">
+                                <p class="product-item-text">Инвестиции в ценные бумаги, драгоценные металлы и иностранную валюту</p>
+                                <a class="product-item-link" href="#">Подробнее</a>
+                            </div>
+                            <div class="product-cover-img">
+                                <img class="product-cover-img-img" src="href="https://kurzan.github.io/pay-form/images/products/shop.png" alt="">
+                            </div>
                         </div>
-                        <div class="product-cover-img">
-                            <img class="product-cover-img-img" src="https://kurzan.github.io/pay-form/images/products/shop.png" alt="">
+                    </div>
+                    <div class="product-item">
+                        <h3 class="product-item-title">Магазин финансовых продуктов</h3>
+                        <div class="product-cover">
+                            <div class="product-cover-text">
+                                <p class="product-item-text">Инвестиции в ценные бумаги, драгоценные металлы и иностранную валюту</p>
+                                <a class="product-item-link" href="#">Подробнее</a>
+                            </div>
+                            <div class="product-cover-img">
+                                <img class="product-cover-img-img" src="href="https://kurzan.github.io/pay-form/images/products/shop.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -162,5 +164,5 @@
         </div>
     </section>
 </body>
-<script src="https://kurzan.github.io/pay-form/styles/style.js"></script>
+<script src="/styles/style.js"></script>
 </html>
