@@ -2,13 +2,20 @@
     max-width: 1020px;
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
+    gap: 60px;
+}
+
+.main-pay-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .pay {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 0 0 600px;
+    max-width: 600px;
 }
 
 /* .pay-tablist {
@@ -153,9 +160,6 @@
 #sbp-hide {
     display: none;
 }
-
-
-
 
 .tabs>input[type="radio"] {
     display: none;
