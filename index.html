@@ -36,21 +36,24 @@
                                 
                             </div>
                             <div class="pay-form-item">
+                                <label for="selectPortfel">Договор</label>
                                 <select class="form_select" name="contract" style="color:gray" onchange="this.style.color='black'" required>
-                                    <option class="pay-option" value="" style="display:none">Выбрать договор</option>
+                                    <option class="pay-option" value="" style="display:none">Выберите из списка</option>
                                     <option value="">Договор ИИС 1572</option>
                                     <option value="">Валютный договор</option>
                                     <option value="">Договор универсального инвестиционного счета s2998</option>
                                 </select>
                             </div>
                             <div class="pay-form-item">
+                                <label for="selectPortfel">Портфель</label>
                                 <select class="form_select" name="portfel" style="color:gray" onchange="this.style.color='black'">
-                                    <option value="" style="display:none">Выбрать портфель</option>
+                                    <option value="" style="display:none">Выберите из списка</option>
                                     <option value="">Фондовый рынок Московской биржи</option>
                                 </select>
                             </div>
                             <div class="pay-form-value">
-                                <input class="pay-form-input" type="number" name="" placeholder="Ввести сумму, ₽" required>
+                                <label for="selectPortfel">Сумма, ₽ </label>
+                                <input class="pay-form-input" type="number" name="" placeholder="1000 рублей" required>
                                 <button class="pay-form-btn">Пополнить</button>
                             </div>
                             <p class="our-com-p">Наша комиссия: 0 ₽</p>
@@ -121,6 +124,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="nfkapp">
+                    <p class="nfkapp-text">Нажмите, чтобы скачать и <mark class="nfkapp-text-mark">активировать</mark> приложение "НФК-Себрежения"</p>
+                    <div class="nfkapp-cover">
+                        <img class="nfkapp-img" id="openApp" src="https://github.com/kurzan/pay-form/images/nfksber.png" alt="">
+                    </div>
+                    <div class="closeModal"></div>
+                </div>
                 <div class="products">
                     <h1>Популярные продукты</h1>
                     <div class="product-item">
@@ -128,7 +138,7 @@
                         <div class="product-cover">
                             <div class="product-cover-text">
                                 <p class="product-item-text">Ожидаемая доходность в рамках стандартной стратегии доверительного управления «Максимум»</p>
-                                <a class="product-item-link" href="#">Перейти</a>
+                                <a class="product-item-link" target="_blank" href="https://trust.nfksber.ru/">Перейти</a>
                             </div>
                             <div class="product-cover-img">
                                 <img class="product-cover-img-img" src="https://kurzan.github.io/pay-form/images/products/du_array.png" alt="">
@@ -166,3 +176,4 @@
 </body>
 <script src="/styles/style.js"></script>
 </html>
+
